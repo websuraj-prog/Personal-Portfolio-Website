@@ -1,0 +1,149 @@
+[data-theme="light"] body {
+    background-color: white;
+    color: #333;
+}
+
+[data-theme="light"] #header {
+    background: url('images/white_background.jpg') no-repeat center center/cover;
+} 
+
+[data-theme="light"] .navbar i {
+    color: #333;
+}
+
+[data-theme="light"] .navbar ul {
+    background-color: rgba(255, 0, 79, 0.6);
+}
+
+[data-theme="light"] .sub-title {
+    color: #333;
+}
+
+[data-theme="light"] .about-left-col {
+    color: #333;
+}
+
+[data-theme="light"] .about-right-col {
+    color: #333;
+}
+
+[data-theme="light"] .about-col-2 p {
+    color: #333;
+}
+
+[data-theme="light"] .skill-item.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+[data-theme="light"] .skill-item h3 {
+    color: #fff;
+}
+
+[data-theme="light"] .tab-links {
+    color: #333;
+    font-weight: bold;
+}
+
+[data-theme="light"] .tab-links.active-link {
+    color: #ff004f;
+    font-weight: bold;
+}
+
+[data-theme="light"] .tab-links.active-link::after {
+    background: #ff004f;
+}
+
+[data-theme="light"] .tab-contents ul {
+    color: #fff;
+}
+
+[data-theme="light"] .tab-contents p {
+    color: #fff;
+}
+
+[data-theme="light"] .tab-contents ul li {
+    color: #333;
+}
+
+[data-theme="light"] .tab-contents ul li span {
+    color: #ff004f;
+}
+
+[data-theme="light"] .tab-contents ul li::marker {
+    color: #ff004f;
+}
+
+[data-theme="light"] .services-list p, h2, i {
+    color: #fff;
+}
+
+[data-theme="light"] .work-list p, h2, h3 {
+    color: #fff;
+}
+
+[data-theme="light"] .work-list i {
+    color: #ff004f;
+}
+
+[data-theme="light"] .btn {
+    color: #333;
+    font-weight: bold;
+}
+
+[data-theme="light"] .contact-left h3 {
+    color: #333;
+}
+
+[data-theme="light"] .contact-left p {
+    color: #333;
+}
+
+[data-theme="light"] .contact-left p span {
+    color: #ff004f;
+}
+
+[data-theme="light"] .contact-left p a {
+    color: #ff004f;
+}
+
+[data-theme="light"] .contact-left p a:hover {
+    color: #333;
+}
+
+
+[data-theme="light"] .contact-left p i {
+    color: #ff004f;
+}
+
+[data-theme="light"] .social-icons i {
+    color: #ff004f;
+}
+
+[data-theme="light"] .social-icons a:hover {
+    color: #ff004f;
+}
+
+[data-theme="light"] .btn.btn2 {
+    background: #ff004f;
+    color: #fff;
+    font-weight: bold;
+}
+
+[data-theme="light"] .copyright {
+    color: #ababab;
+}
+
+[data-theme="light"] .contact-right form input, [data-theme="light"] .contact-right form textarea {
+    border: 1px solid #ccc;
+}
+
+[data-theme="light"] .contact-right form input:focus, [data-theme="light"] .contact-right form textarea:focus {
+    border: 1px solid #ff004f;
+}
+
+[data-theme="light"] .contact-right form button {
+    background: #ff004f;
+}
+
+

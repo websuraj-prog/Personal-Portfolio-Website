@@ -1,0 +1,175 @@
+
+.navbar {
+    display: block;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 6px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0; 
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hamburger menu (hidden on desktop, visible on mobile) */
+.hamburger-menu {
+    cursor: pointer;
+    position: fixed;
+    right: 20px; 
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    transition: all 0.3s;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+    /* Show hamburger menu on mobile */
+    .hamburger-menu {
+        display: flex;
+    }
+
+    /* Hide navbar list items on mobile initially */
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: #fff; 
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        width: 200px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 10px 0;
+        gap: 0;
+    }
+
+    /* Show navbar when toggled */
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .navbar a {
+        color: #333;
+        font-size: 16px;
+    }
+}
+
+
+
+/* Mobile Responsive  */
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/phone_background.png)   
+    }
+    
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav .fas{
+        position: fixed;
+        top: 5%;
+        right: 5%;
+        color: #fff;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        text-align: center;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s; 
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{    
+        position: absolute;
+        top: 25px;  
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{    
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    } 
+    
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .skill-item {
+        background: #262626;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+
+
+

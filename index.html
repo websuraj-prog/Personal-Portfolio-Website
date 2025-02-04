@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="HamburgerMenu.css">
+    <link rel="stylesheet" href="Lightmode.css">
+    <script src="https://kit.fontawesome.com/676de1fc31.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="navbar">
+                <img src="images/logo.png" class="logo" id="logo" alt="No image found">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <button id="theme-btn"><i class="fa-solid fa-moon"></i></button>    
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p class="typing">Full Stack Web Developer</p>
+                <h1>Hi, I'm <span>Suraj</span><br>From Mumbai</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------About---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="No image found">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Eager to Learn. Excited to Build. Ready to Grow.
+                        I’m a dedicated Full-Stack Web Development student with a passion for coding, problem-solving,
+                        and creating impactful web applications. Currently honing my skills in building dynamic,
+                        user-friendly web solutions, I’m excited to dive deeper into the tech industry and make
+                        meaningful contributions.
+                        <br>
+                        <br>
+                        In addition to my learning journey, I bring 1 year of professional experience as an Operation
+                        Helpdesk Executive at Hitachi Payment Services, where I honed my skills in problem resolution,
+                        communication, and operational efficiency. This role gave me valuable insights into teamwork,
+                        process management, and customer satisfaction—skills I now channel into my web development
+                        projects.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="skills-container">
+                            <div class="skill-item">
+                                <i class="fa-brands fa-html5 skill-icon"></i>
+                                <h3>HTML</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%">85%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fa-brands fa-css3-alt skill-icon"></i>
+                                <h3>CSS</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%">80%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fa-brands fa-js-square skill-icon"></i>
+                                <h3>JavaScript</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%">75%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fa-brands fa-python skill-icon"></i>
+                                <h3>Python</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70%">70%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <div class="experience-container">
+                            <div class="experience-item">
+                                <i class="fa-solid fa-briefcase experience-icon"></i>
+                                <h3>Hitachi Payment Services</h3>
+                                <p>Operation Helpdesk Executive</p>
+                                <span>(Feb 2022 - Mar 2023)</span>
+                            </div>
+                            <div class="experience-item">
+                                <i class="fa-solid fa-laptop-code experience-icon"></i>
+                                <h3>LiveTechIndia</h3>
+                                <p>Full Stack Web Development Trainee</p>
+                                <span>Worked on HTML, CSS, JavaScript, and Python projects</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <div class="education-container">
+                            <div class="education-item">
+                                <i class="fa-solid fa-graduation-cap education-icon"></i>
+                                <h3>Master of Commerce</h3>
+                                <span>(2022 - 2024)</span>
+                            </div>
+                            <div class="education-item">
+                                <i class="fa-solid fa-user-graduate education-icon"></i>
+                                <h3>Bachelor of Commerce</h3>
+                                <span>(2018 - 2022)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------Services---------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>Creating visually appealing and user-friendly websites using HTML, CSS, and JavaScript to deliver
+                        exceptional user experiences.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Backend Development</h2>
+                    <p>Developing robust and scalable backend systems using Python, MongoDB, and Node.js to power
+                        dynamic web applications and APIs.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cube"></i>
+                    <h2>Database Management</h2>
+                    <p> Managing and optimizing databases using MongoDB and MySQL to ensure efficient data storage and
+                        retrieval for web applications.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------portfolio---------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="No Image Found">
+                    <div class="layer">
+                        <h3>Business Website</h3>
+                        <p>This is a simple business website layout built with HTML, CSS, and Bootstrap. It includes a
+                            navigation bar, various content sections, a footer, and custom styling using external
+                            libraries and fonts.</p>
+                        <a href="https://github.com/websuraj-prog/Business-page"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="No Image Found">
+                    <div class="layer">
+                        <h3>Manu's food ordering Website</h3>
+                        <p>Menu's.com is a dynamic and responsive website designed to showcase various menu options,
+                            provide navigation to different services, and allow users to contact the service provider.
+                            This project uses HTML, CSS, and JavaScript for its structure, styling, and interactivity,
+                            respectively.</p>
+                        <a href="https://github.com/websuraj-prog/Menu-s.com"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="No Image Found">
+                    <div class="layer">
+                        <h3>Restaurant Website</h3>
+                        <p>This project is a simple web template built using HTML, CSS, and a bit of JavaScript. It
+                            provides a basic layout for a restaurant website that includes a menu modal and a contact
+                            form modal for reservations and food orders.</p>
+                        <a href="https://github.com/websuraj-prog/Restaurant-page"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- --------------------contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> surajvishawakarma01@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9967570756</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1GkVaoJEKK/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/alone_rider.___/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/suraj-vishwakarma-18127828b/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/websuraj-prog"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Suraj Vishwakarma CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="contact-form">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Suraj Vishwakarma | All rights reserved</p>
+        </div>
+    </div>
+    <!-- --------------------footer---------------- -->
+    <script src="app.js"></script>
+</body>
+
+</html>
